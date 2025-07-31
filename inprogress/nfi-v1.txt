@@ -1,25 +1,19 @@
-Namespace Identifier Registration
+Namespace Registration for Neuro-Foundation
 
-   Following is the formal application for the registration of the
-   Namespace Identifier nfi.
+Namespace Identifier: nfi
 
-Namespace Identifier (formal)
+Version: 1
 
-   nfi
+Date: 2025-07-31
 
-Version
+Registrant:
 
-   3
-
-Date
-
-   2025-07-31
-
-Registrant
-
-   Organization registering the Namespace Identifier:
+   Name:
 
       Trust Anchor Group AB
+
+   Address:
+
       Blekholmsterrassen 36
       11164 Stockholm
       Sweden
@@ -30,9 +24,9 @@ Registrant
       email: contact@neuro-foundation.io
       xmpp: peter@waher.se
 
-Purpose
+Purpose:
 
-   Neuro-Foundation [2] presents communication infrastructure for a
+   Neuro-Foundation presents communication infrastructure for a
    globally scalable, distributed infrastructure for smart societies.
    By harmonizing technologies (bridging technology boundaries), it 
    allows different technologies to interact and interoperate. The 
@@ -52,7 +46,7 @@ Purpose
 
    They do this by defining interoperability interfaces used over 
    different Internet protocols such as HTTP and the versatile and 
-   extensible Internet protocol XMPP [3-5] and others. Each
+   extensible Internet protocol XMPP, as well as others. Each
    interoperability interface, be it a peer-to-peer interoperability
    interface or an edge service interface, is identified using a
    Neuro-Foundation namespace. For interoperability purposes, this
@@ -74,10 +68,9 @@ Purpose
    interoperability namespaces published by the Neuro-Foundation
    in a short and unambiguous manner.
 
+Syntax:
 
-Syntax
-
-   Using the format defined in RFC 3986 [6], and some of its base
+   Using the format defined in RFC 3986, and some of its base
    classes, a formal definition of the syntax used for urn URIs
    used together with the nfi Namespace Identifier is as follows:
 
@@ -105,22 +98,22 @@ Syntax
    * urn:nfi:iot:swu:1.0 - Software Updates
    * urn:nfi:iot:synchronization:1.0 - Synchronization
 
-Assignment
+Assignment:
 
    Names are assigned by the Neuro-Foundation in cooperation with
    funding and interested partners, as new interfaces are developed
    and published. No other resources are assigned names using the
    nfi namespace identifier.
 
-Security and Privacy
+Security and Privacy:
 
    There are no known security or privacy implications of using the
    nfi namespace identifier. The URIs only identify public interfaces,
    which contain no personal, confidential or sensitive information.
 
-Interoperability
+Interoperability:
 
-   There are no known security or privacy implications to using the
+   There are no known interoperability implications of using the
    nfi namespace identifier. One of the reasons for using the URN URI
    schema to identify interfaces, is to avoid confusion with 
    namespaces using the http or https URI schema to identify the
@@ -130,51 +123,22 @@ Interoperability
    during interoperable communication across domains with different
    security policies.
    
-Resolution
+Resolution:
 
    There is no resolution mechanism anticipated for use with the
    nfi namespace identifier. However, each URN identifies an
-   interface as described by this document and published in [2].
+   interface as described by this document and published by the 
+   Neuro-Foundation.
 
-Documentation
+Documentation:
 
-   The Neuro-Foundation interfaces are documented publicly in [2].
+   The Neuro-Foundation interfaces are documented publicly at:
 
-Additional Information
+   https://neuro-foundation.io/
+
+Additional Information:
 
    The nfi namespace identifier is used to clearly identify
    Neuro-Foundation interfaces for interoperable communication
    in a short and clear manner. Interface names are not negotiated
    with other organizations, to avoid confusion and overlap.
-
-Revision Information
-
-   Third draft: Updated contact e-mail, the formal syntax of names
-                and the resolution statement. Added a reference to
-                RFC 8141. Changed order of two bullet items.
-   Second draft: Changed NID from nf to nfi.
-   First draft: New document.
-
-References
-
-   [1] P. Saint-André, "RFC 8141: Uniform Resource Names (URNs)"
-       [Online]. Available:
-       https://datatracker.ietf.org/doc/html/rfc8141.
-
-   [2] Neuro-Foundation interfaces, https://neuro-foundation.io/
-
-   [3] P. Saint-André, "RFC 6120: Extensible Messaging and Presence
-       Protocol (XMPP): Core," [Online].
-       Available: http://xmpp.org/rfcs/rfc6120.html.
-
-   [4] P. Saint-André, "RFC 6121: Extensible Messaging and Presence
-       Protocol (XMPP): Instant Messaging and Presence," [Online]. 
-       Available: http://xmpp.org/rfcs/rfc6121.html.
-
-   [5] P. Saint-André, "RFC 6122: Extensible Messaging and Presence
-       Protocol (XMPP): Address Format," [Online].
-       Available: http://xmpp.org/rfcs/rfc6122.html.
-
-   [6] T. Berners-Lee, R. Fielding and L. Masinter, "Uniform Resource
-       Identifier (URI): Generic Syntax," [Online].
-       Available: https://tools.ietf.org/html/rfc3986.
