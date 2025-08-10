@@ -4,7 +4,7 @@ Namespace Identifier: nfi
 
 Version: 1
 
-Date: 2025-07-31
+Date: 2025-08-10
 
 Registrant:
 
@@ -81,7 +81,8 @@ Syntax:
          version      = 1*DIGIT "." 1*DIGIT
 
    As an example, the following are some of the namespaces defined 
-   for IoT interoperability and harmonization, defined in [2]:
+   for IoT interoperability and harmonization, as defined by the
+   Neuro-Foundation:
 
    * urn:nfi:iot:concentrator:1.0 - Concentrators
    * urn:nfi:iot:ctr:1.0 - Actuator Control
@@ -127,7 +128,7 @@ Resolution:
 
    There is no resolution mechanism anticipated for use with the
    nfi namespace identifier. However, each URN identifies an
-   interface as described by this document and published by the 
+   interface as described by this document and published by the
    Neuro-Foundation.
 
 Documentation:
