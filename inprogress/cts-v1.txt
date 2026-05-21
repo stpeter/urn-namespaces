@@ -1,0 +1,72 @@
+Registration Template
+
+   Namespace Identifier:  urn:cts:
+
+   Version:  1
+
+   Date:  The date when the registration is requested of IANA, using the
+      format 2026-05-20.
+
+   Registrant:  Dr. Jochen Tiepmar. Chief Implementor and Admin of the Text Service Infrastructure project.
+      Email: tiepilab@gmx.de
+      At registration date the project is hosted privately at https:urncts.eu.
+
+   Purpose:  The Canonical Text Services URN (CTS URN) scheme defined here (https://github.com/cite-architecture/ctsurn_spec/blob/master/md/specification.md) closely follows the syntactic requirements of a URN, but extends its goal to provide a system of persistent, technology-independent identifiers for texts and passages of texts. Specifically, the semantics of the CTS URN scheme are recognized by implementations of the Canonical Text Services protocol, but CTS URNs can be used in any system, digital or other, that can parse the syntax of CTS URN values according to the syntax and semantics of this specification.
+
+   1.  The kinds of resources identified by URNs assigned within the URN namespace.
+       -> Text passages (Not scans of pages, but the actual text)
+
+   2.  The scope and applicability of the URNs assigned within the URN namespace;
+       -> Text passages, especially but not limited to (digital) humanistic science.
+
+   3.  How the intended community (and the Internet community at large)
+       will benefit from using or resolving the assigned URNs.
+       -> The URNs as specified in the Canonical Text Service protocol provide persistent service-independent identifiers for (any possible) text passage. These references are used across different tools and frameworks to link the text passages as interoperable entities.
+
+   4.  How the URN namespace relates to and complements existing URN
+       namespaces, URI schemes, and non-URN identifier systems.
+       -> CTS URNs are thematically related to urn:nbn: (RFC8458) but urn:nbn: refers to locations of digitized copies of full documents. urn:cts: is more limited in scope as it only serves text content but it is much more fine grained and flexible as it provides a syntax that covers the citability of any possible text passage inside a document.
+       
+   5.  The kinds of software applications that can use or resolve the
+       assigned URNs
+       -> As part of the infrastructure project, a growing set of interfaces and tools is developed. At the moment urn:cts: URNs can be resolved in Python, Javascript or via HTTP(S)-GET. Future interfaces will include more programming languages. The infrastructure is currently encorporated in research environments like CLARIN / Text+ and community driven infrastructure specifications like the Distributed Text Service project (dtsapi.org).
+
+   6.  Whether resolution services are available or will be available
+       -> The text data is served via a decentralised software infrastructure. The server addresses are mapped to the [data_namespace] inside urn:cts:[data_namespace]. The [data_namespace] is open source, with one instance being hosted at https://urncts.eu/namespaceresolver as a baseline for functionality.
+
+   7.  Whether the URN namespace or its definition is expected to become
+       a constituent part of a standard being developed in the IETF or
+       some other recognized standards body.
+	   -> No information yet.
+
+
+   Syntax:  The syntax defines a text passage in a document as 
+   urn:cts:CTSNAMESPACE:WORK:PASSAGE
+   CTSNAMESPACE is also referred as [data_namespace] in this request and WORK and PASSAGE is further broken down to reflext the hierarchy of the document and text passage.
+   For full breakdown of the syntax and usage see the humanistic specifications at https://github.com/cite-architecture/ctsurn_spec/blob/master/md/specification.md
+
+   Assignment:  The definition of data namespaces is completely open. Data namespaces can be registered for the namespace resolver based on FCFS principle. Data namespaces are mapped server addresses. URN notation inside a data namespace follows the logic of the document structure and is applied automatically. Definition of data namespaces is done at the discretion of the data provider. The registration of a data namespace is similiar to the open principle of how URLs are mapped to IP addresses by DNS services.
+   
+   Security and Privacy:  CTS URNs are applicable for publicly available text passages and do not contain the text content itself. This mechanism can only create privacy or security issues if the documents themselves create them. In that case the harm is not done by the URN reference but by the available document outside the scope of the URN. 
+   CTS URNs do not create any security or privacy risk if they are not intentionally and artificially misused to do that.   
+
+   Interoperability:  
+   Possible confusion may arise with regard to the urn:nbn: namespace (RFC8458) as both refer to documents primarily in scientific contexts. 
+   They are inherently different. CTS URNs refer to (any possible) citable unit within documents and translate the logic of URN notation to persistently citable text passages. NBN URNs as described in (RFC8458) are not applicable for text passages but for the electronic resource that represents a digitised copy of the document. CTS refers to textual document content while NBN is applicable for document location.
+   Interopability collisions may arise from conflicts of the data namespaces within the CTS URN namespace, but only if new datasets are made public without proper research. These conflicts resolve themselves by the FCFS principle of the namespace resolver inside the infrastructure.
+   A similiar project named Distributed Text Services may request the namespace urn:dts: in the future. This will not create a collision as both projects work in tandem and differ in the applicable use cases. DTS relies (among others) on the citability of CTS URNs, which is the goal of this formal request of registration of the CTS URN namespace.
+   
+   
+   Resolution:  
+   The text data is served via a decentralised software infrastructure. The server addresses are mapped to the namespace inside CTS [data_namespace], similiar to a DNS server. The [data_namespace] is open source, with one instance being hosted at https:urncts.eu/namespaceresolver.
+   As part of the infrastructure project, a growing set of interfaces and tools is developed. At the moment CTS URNs can be resolved in Python, Javascript or via HTTP(S)-GET.
+
+   Documentation:  
+      CTS URN specification https://github.com/cite-architecture/ctsurn_spec/blob/master/md/specification.md
+      Text Service Infrastructure https://urncts.eu/
+      Project Dissertation https://nbn-resolving.org/urn:nbn:de:bsz:15-qucosa2-212926
+
+   Additional Information:  The Canonical Text Service protocol was specified by humanistic researchers in the Homer Multitext Project. The technical implementation was done by the registrant as part of his dissertation and ist now used as part of an infrastructure project. 
+   The specifying researchers did not register the namespace and show no intention to do so. In order to make the infrastructure safe for citation, the registrant and admin of the infrasstructure is hoping that he can register the namespace. A successful registration will help to transfer the project to a scientific organization and in the process transfer the registration of the CTS URN namespace to it. 
+
+   Revision Information:  
