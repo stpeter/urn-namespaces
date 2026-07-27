@@ -1,4 +1,4 @@
-GS1 URN Namespace Registration
+URN Namespace Registration for GS1
 ==============================
 
    Artefact version: v1.0.0
@@ -9,7 +9,7 @@ GS1 URN Namespace Registration
    This document is the concise GS1 URN registration request. It
    follows the field names and order of the registration template in RFC
    8141, Appendix A. A fuller GS1 URN namespace specification is planned
-   for publication through the RFC Independent Submission Stream. The
+   for publication through the RFC Independent Submissions Stream. The
    fuller specification is expected to contain a Version 2 registration
    template that points to the published RFC while preserving every URN
    validly assigned under this Version 1 registration.
@@ -76,7 +76,7 @@ Purpose
    by itself, establish lexical or semantic equivalence.
 
    GS1 intends to publish a fuller specification through the RFC
-   Independent Submission Stream. This Version 1 registration is
+   Independent Submissions Stream. This Version 1 registration is
    intended to enable GS1 standardisation and assignment work to proceed
    while that publication is developed. A subsequent Version 2
    registration may add documentation and clarification but will not
@@ -314,7 +314,7 @@ Documentation
    * GS1 glossary: https://xchange.gs1.org/sites/glossary/en-gb
 
    GS1 intends to publish A Uniform Resource Name (URN) Namespace for
-   GS1 through the RFC Independent Submission Stream. The resulting RFC
+   GS1 through the RFC Independent Submissions Stream. The resulting RFC
    is expected to provide fuller architectural rationale, examples,
    resolver guidance and a Version 2 registration template.
 
