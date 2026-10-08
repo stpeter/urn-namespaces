@@ -1,11 +1,11 @@
- Namespace Identifier:
+Namespace Identifier:
    dnp
 
 Version:
    1
 
 Date:
-   2026-08-05
+   2026-08-10
 
 Registrant:
    Pakistan Digital Authority (PDA)
@@ -98,7 +98,7 @@ Syntax:
 
      NSS         = class ":" local-id [ ":" edition ]
 
-     class       = 2*24( lowalpha )
+     class       = 2*24( ALPHA )
 
      local-id    = id-start *62( id-char ) id-end
      id-start    = ALPHA / DIGIT
@@ -109,7 +109,12 @@ Syntax:
      ver-form    = "v" 1*3DIGIT [ "." 1*3DIGIT ]
      date-form   = 4DIGIT "-" 2DIGIT "-" 2DIGIT
 
-     lowalpha    = %x61-7A     ; a-z
+   The grammar above defines the set of well-formed names. It is wider
+   than the set of names PDA assigns: the assignment practice for
+   local-id and the canonical form given under URN-equivalence below
+   are narrower, and a name presented in a form the grammar admits but
+   PDA would not have assigned is still well-formed and still
+   URN-equivalent to the assigned name.
 
    The NSS contains at most two colon characters and consists of
    exactly two or three fields. No structure is implied by the
@@ -399,11 +404,15 @@ Resolution:
    Resolution is intended. PDA operates and undertakes to continue
    to operate a resolution service for names in this namespace.
 
-   The service is offered over HTTPS at a stable endpoint under a
-   Government of Pakistan domain, published in the PDA
-   specification cited under Documentation. A client resolves a
-   name by requesting the assigned-name as a path component of that
-   endpoint.
+   The service is offered over HTTPS at the endpoint
+   https://urn.dnp.gov.pk/, operated by PDA under a Government of
+   Pakistan domain. A client resolves a name by requesting the
+   assigned-name as a path component of that endpoint, for example
+   https://urn.dnp.gov.pk/urn:dnp:standard:dnp-x.001:v2. The
+   endpoint is also recorded in the PDA specification cited under
+   Documentation; should it ever change, the specification and this
+   registration are revised, and names already assigned are
+   unaffected.
 
    Resolution follows the work/edition distinction. A work-level
    name resolves to the current authoritative edition of the
@@ -442,7 +451,7 @@ Resolution:
 Documentation:
    [1] Sohail, H., Ed., "A Uniform Resource Name (URN) Namespace for
        Digital Nation Pakistan (DNP)", Work in Progress,
-       Internet-Draft, draft-sohail-urn-dnp-00, 5 August 2026,
+       Internet-Draft, draft-sohail-urn-dnp-01, 10 August 2026,
        <https://datatracker.ietf.org/doc/draft-sohail-urn-dnp/>.
 
    A stable specification maintained by PDA is published at
