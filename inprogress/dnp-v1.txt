@@ -1,13 +1,19 @@
+Namespace Registration for Pakistan Digital Authority
+
 Namespace Identifier:
+
    dnp
 
 Version:
+
    1
 
 Date:
+
    2026-08-10
 
 Registrant:
+
    Pakistan Digital Authority (PDA)
    Government of Pakistan
    4th Floor, 5-A Constitution Avenue, Sector F-5/1
@@ -28,6 +34,7 @@ Registrant:
    Section 6.2.
 
 Purpose:
+
    Names in this namespace identify normative and authoritative
    instruments published under the Digital Nation Pakistan
    programme: national digital policies, frameworks, technical
@@ -91,6 +98,7 @@ Purpose:
    issued by PDA itself.
 
 Syntax:
+
    Names conform to the URN syntax of Section 2 of RFC 8141. The
    Namespace Specific String is further constrained as follows,
    using the ABNF of RFC 5234. ALPHA and DIGIT are imported from
@@ -120,8 +128,8 @@ Syntax:
    exactly two or three fields. No structure is implied by the
    colon beyond that field division.
 
-   class states the kind of instrument. The initially registered
-   classes are: policy, framework, standard, architecture,
+   The 'class' field states the kind of instrument. The initially 
+   registered classes are: policy, framework, standard, architecture,
    specification, guideline, directive, schema, api, registry,
    dataset, masterplan, publication. The set is closed at any given
    time and is extended only by amendment to the PDA specification
@@ -130,21 +138,21 @@ Syntax:
    marked closed and the names already assigned within it remain
    valid.
 
-   local-id carries the identifier already assigned to the
-   instrument under PDA's document nomenclature framework,
+   The 'local-id' field carries the identifier already assigned 
+   to the instrument under PDA's document nomenclature framework,
    transformed to lower case, or a mnemonic assigned by PDA where
    no such identifier exists. It is unique within its class and is
    never reassigned. It does not encode subject matter, issuing
    unit, date or status, and consumers must not parse it for such
    information.
 
-   The optional edition field distinguishes two things that are
-   deliberately identified separately. A name without an edition
+   The optional 'edition' field distinguishes two things that are
+   deliberately identified separately. A name without an 'edition'
    field identifies the instrument as a continuing work -- the
    standard or policy as an institutional object persisting across
    revisions -- and is appropriate where the citing party means
    "this instrument, whichever edition is current". A name with an
-   edition field identifies one fixed, immutable published state,
+   'edition' field identifies one fixed, immutable published state,
    and is appropriate where the citing party means "this exact
    text". Both forms are permanent; neither is ever reassigned; the
    work-level name survives withdrawal of the instrument from
@@ -212,6 +220,7 @@ Syntax:
      urn:dnp:dataset:connectivity-index:2026-06-30
 
 Assignment:
+
    Assignment is closed. Names are assigned solely by PDA, or by an
    entity acting under a written instrument of delegation issued by
    PDA. Assignment is not open to application by third parties and
@@ -276,6 +285,7 @@ Assignment:
    stewardship does not affect names already assigned.
 
 Security and Privacy:
+
    Absence of personal data. Names are assigned only to published
    institutional instruments. A name must not be assigned to a
    natural person, to an identifier of a natural person, to an
@@ -291,8 +301,9 @@ Security and Privacy:
    transactional data would require a separate registration with a
    materially different persistence model, and PDA does not propose
    one. The Register records the names of officers only in their
-   institutional capacity as approving authority, information
-   already disclosed on the face of the published instrument.
+   institutional capacity as approving authority, which is
+   information already disclosed on the face of the published
+   instrument.
 
    Comparison and confusion. The case-insensitivity rule introduces
    the general risks discussed in RFC 6943 for identifiers compared
@@ -310,7 +321,7 @@ Security and Privacy:
    error is detectable by inspection. Separately, because the
    work-level and edition-level forms are similar in appearance but
    identify different resources, an implementation that truncates
-   or elides the edition field silently substitutes a work-level
+   or elides the 'edition' field silently substitutes a work-level
    citation for an edition-level one, changing its meaning in
    conformance and contractual contexts. Implementations must not
    truncate names, and applications displaying names should display
@@ -342,6 +353,7 @@ Security and Privacy:
    enumeration of the namespace is an intended feature.
 
 Interoperability:
+
    The string "DNP". "DNP" is used as a corporate brand by at least
    one substantial commercial enterprise unconnected with Pakistan,
    which holds trademark registrations in that string in several
@@ -401,6 +413,7 @@ Interoperability:
    assertions.
 
 Resolution:
+
    Resolution is intended. PDA operates and undertakes to continue
    to operate a resolution service for names in this namespace.
 
@@ -408,10 +421,10 @@ Resolution:
    https://urn.dnp.gov.pk/, operated by PDA under a Government of
    Pakistan domain. A client resolves a name by requesting the
    assigned-name as a path component of that endpoint, for example
-   https://urn.dnp.gov.pk/urn:dnp:standard:dnp-x.001:v2. The
+   <https://urn.dnp.gov.pk/urn:dnp:standard:dnp-x.001:v2>. The
    endpoint is also recorded in the PDA specification cited under
    Documentation; should it ever change, the specification and this
-   registration are revised, and names already assigned are
+   registration will be revised, and names already assigned will be
    unaffected.
 
    Resolution follows the work/edition distinction. A work-level
@@ -449,6 +462,7 @@ Resolution:
    its resolver ignores any that are presented.
 
 Documentation:
+
    [1] Sohail, H., Ed., "A Uniform Resource Name (URN) Namespace for
        Digital Nation Pakistan (DNP)", Work in Progress,
        Internet-Draft, draft-sohail-urn-dnp-01, 10 August 2026,
@@ -460,6 +474,7 @@ Documentation:
    registration.
 
 Additional Information:
+
    The Digital Nation Pakistan Act, 2025 establishes PDA and sets
    out its functions, including the specification of national
    digital standards and the coordination of digitalisation across
@@ -467,9 +482,9 @@ Additional Information:
    the instruments identified in this namespace and of the
    institutional continuity described under Assignment.
 
-   Registrations by national government bodies in this registry
-   include those of the Federal Chancellery of the Republic of
-   Austria and of New Zealand (RFC 4350), and by national memory
+   Registrations by national government bodies in the URN namespaces
+   registry include those of the Federal Chancellery of the Republic
+   of Austria and of New Zealand (RFC 4350), and by national memory
    institutions including the National Archives of Finland. This
    registration follows the same pattern: a national public
    authority seeking durable identification of a defined corpus of
@@ -480,4 +495,5 @@ Additional Information:
    anticipate or depend on any such reservation.
 
 Revision Information:
+
    None. This is the initial registration.
