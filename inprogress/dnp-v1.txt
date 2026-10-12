@@ -131,7 +131,7 @@ Syntax:
    The 'class' field states the kind of instrument. The initially 
    registered classes are: policy, framework, standard, architecture,
    specification, guideline, directive, schema, api, registry,
-   dataset, masterplan, publication. The set is closed at any given
+   dataset, masterplan, publication. The set is fixed at any given
    time and is extended only by amendment to the PDA specification
    cited under Documentation. A registered class is never withdrawn
    or redefined; a class no longer used for new assignments is
@@ -221,8 +221,8 @@ Syntax:
 
 Assignment:
 
-   Assignment is closed. Names are assigned solely by PDA, or by an
-   entity acting under a written instrument of delegation issued by
+   Assignment is restricted. Names are assigned solely by PDA, or by
+   an entity acting under a written instrument of delegation issued by
    PDA. Assignment is not open to application by third parties and
    there is no procedure by which an external party may request a
    name for a resource of its own.
